@@ -1,0 +1,62 @@
+<html lang="en"> 
+
+<head> 
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>To-do list</title> 
+
+    <link rel="stylesheet" href="style.css"> 
+
+    <link rel="stylesheet" href="dark-mode.css">
+</head> 
+
+<body> 
+
+    <div class="container"> 
+        <div class="section1"> 
+            <h1 id="title">TO DO LIST</h1> 
+            <p>
+                <label for="new-task">Add Tasks</label> 
+                <input type="text" id="taskInput" placeholder=" ">
+                <button onclick="addTask()">Add</button>
+                <ul id="taskList"></ul>
+            </p> 
+        </div> 
+        <div class="section2"> 
+            <h3>Things to do</h3> 
+            <ul id="incomplete-tasks">
+
+            </ul> 
+        </div> 
+        <div class="section3"> 
+            <h3>Tasks Completed</h3> 
+            <ul id="completed-tasks"> 
+                <li> 
+                    <input type="checkbox" checked=""> 
+                    <label>Learn JavaScript</label> 
+                    <input type="text"> 
+                    <button class="edit">Edit</button> 
+                    <button class="delete">Delete</button> 
+                </li> 
+            </ul> 
+        </div> 
+        <div class="section4"> 
+            <button id="clear"> 
+            <p>Clear</p> 
+            </button> 
+        </div> 
+    </div>
+    <div class="mode-toggle">
+        <h><b>Dark/Light Mode Toggle</b></h>
+        <label class="switch">
+          <input type="checkbox" id="modeSwitch">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    <script src="script.js"></script> 
+</body>
+
+</html> 
